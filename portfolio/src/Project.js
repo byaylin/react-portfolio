@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import githublogo from '../src/images/github.png';
 
 export default function Project(props) {

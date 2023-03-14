@@ -7,3 +7,7 @@
 #projectname{
     text-align: center;
 }
+
+#project-repo{
+    display: block;
+}

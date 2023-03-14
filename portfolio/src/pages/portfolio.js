@@ -8,6 +8,8 @@ import quiz from '../images/quiz.png'
 import notetaker from '../images/notetaker.png'
 import Project from '../Project'
 import '../css/portfolio.css'
+import project1 from '../images/project1.png';
+import readme from '../images/readme.png'
 
 const projects =[
     {
@@ -41,7 +43,22 @@ const projects =[
         img: notetaker,
         alt: 'note taker app',
         name: 'note taker app'
-    }    
+    },
+    {
+    id: 5,
+    repo:`https://github.com/ConnorMcLaughlin2022/Project-1` ,
+    url:`https://connormclaughlin2022.github.io/Project-1/`,
+    img: project1,
+    alt: 'project1',
+    name: `that's the move`
+    },
+    {
+    id: 6,
+    repo:`https://github.com/byaylin/ReadMe-generator` ,
+    img: readme,
+    alt: 'readme generator',
+    name: 'readme generator'
+}        
 ]
 
 export default function Portfolio(){
@@ -50,7 +67,7 @@ export default function Portfolio(){
         <Row sm={2}>
             {projects.map(projects =>
                 <Col>
-                <Project id={projects.id} name={projects.name} link={projects.url} images={projects.img}></Project>
+                <Project id={projects.id} name={projects.name} link={projects.url} repo={projects.repo}images={projects.img}></Project>
                 </Col>)}
         </Row>
     </Container>

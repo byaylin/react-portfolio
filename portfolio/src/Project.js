@@ -8,8 +8,8 @@ export default function Project(props) {
         <img id="projectimg" className="card-img-top" src={props.images}/>
         <div id="projectname" className="card-body">
           <a href={props.link} target={"_blank"} className="btn btn-primary">
-            {props.name}
-          </a>
+            {props.name}</a>
+            <a href={props.repo} target={"_blank"} className="btn btn-primary" id="project-repo">click here for repo </a>
         </div>
       </div>
     </div>

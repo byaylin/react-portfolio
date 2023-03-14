@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Nav(){
     return(
-        <nav>
+        <nav id="nav">
         <NavLink to="/react-portfolio" exact="true" className={(navData) =>(navData.isActive ? 'navbar-link active' : 'nav-link' )}>
             About Me
         </NavLink>

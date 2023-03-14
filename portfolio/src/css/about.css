@@ -1,0 +1,14 @@
+#profile{
+    height:300px;
+    width: 300px;
+    margin-left: 40%;
+}
+
+#bio{
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: larger;
+}

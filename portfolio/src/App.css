@@ -1,5 +1,48 @@
 *{
-    background-color: #DBEFBC;
+    background-color: #D6EADF;
     margin: 0;
     padding: 0;
+    font-family: "Lexend", sans-serif;
+}
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav a {
+    margin: 20px 50px;
+    font-size: xx-large;
+    text-size-adjust: 30%;
+}
+
+a:hover {
+    color: #809BCE;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+    font-size: xx-large;
+}
+
+main {
+    margin-top: 2vh;
 }

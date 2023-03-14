@@ -18,6 +18,7 @@ function App() {
                 <Route path="/react-portfolio/resume" element={<Resume />} />
                 <Route path="/react-portfolio/*" element={<h2>404 page not found.</h2>} />
           </Routes>
+          <Footer />
       </BrowserRouter>
   );
 }

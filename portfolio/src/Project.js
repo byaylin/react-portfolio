@@ -1,17 +1,17 @@
 import React from 'react';
-import githublogo from '../src/images/github.png';
+import './css/portfolio.css'
 
 export default function Project(props) {
-    return(
-        <figure>
-            <img src={props.img} alt={props.img} className="card-img">
-                <a href={props.link} className="pLink" target="_blank" rel="noreferrer">
-                    <b>{props.name}</b>
-                </a>
-                <a href={props.repo} className="pRepo" target="_blank" rel="noreferrer">
-                    <img src={githublogo} alt="repo" className="card-logo" />
-                </a>
-            </img>
-         </figure>
-    )
+  return (
+    <div className="container text-center">
+      <div className="card">
+        <img id="projectimg" className="card-img-top" src={props.images}/>
+        <div id="projectname" className="card-body">
+          <a href={props.link} target={"_blank"} className="btn btn-primary">
+            {props.name}
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }
